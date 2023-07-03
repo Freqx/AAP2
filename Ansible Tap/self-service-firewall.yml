@@ -1,7 +1,7 @@
 ---
 - name: Open port a port for Firewalld
-  hosts: your_target_host
-  become: yes
+  hosts: all
+  become: true
 
   tasks:
     - name: Open port
