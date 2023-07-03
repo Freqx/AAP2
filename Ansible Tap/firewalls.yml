@@ -1,7 +1,7 @@
 ---
 - name: Open port 8443 for Firewalld
   hosts: your_target_host
-  become: yes
+  become: true
 
   tasks:
     - name: Open TCP port 8443
