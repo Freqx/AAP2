@@ -1,11 +1,11 @@
 ---
 - name: Reboot the server
   hosts: your_target_host
-  become: yes
+  become: true
 
   tasks:
     - name: Reboot server
-      reboot:
+      ansible.builtin.reboot:
         msg: "Rebooting for kernel update"
         connect_timeout: 5
         reboot_timeout: 600
