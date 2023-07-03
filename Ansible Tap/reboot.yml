@@ -1,6 +1,6 @@
 ---
 - name: Reboot server
-  hosts: your_target_host
+  hosts: all
   become: true
 
   tasks:
