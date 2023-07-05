@@ -1,7 +1,0 @@
----
-- name: My second playbook
-  hosts: all
-  become: true
-  tasks:
-  - name: Ping
-    ansible.builtin.ping:
