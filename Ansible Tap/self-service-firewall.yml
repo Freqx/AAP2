@@ -16,4 +16,4 @@
     - name: Restart firewalld
       ansible.builtin.systemd:
         name: firewalld
-        Qstate: restarted
+        state: restarted
